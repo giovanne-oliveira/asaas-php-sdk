@@ -3,6 +3,8 @@ namespace GiovanneDev\Asaas\Api;
 
 // Entities
 use GiovanneDev\Asaas\Entity\Payment as PaymentEntity;
+use GiovanneDev\Asaas\Entity\PaymentSlipEntity as PaymentSlipEntity;
+use GiovanneDev\Asaas\Entity\PixSlipEntity as PixSlipEntity;
 
 /**
  * Payment API Endpoint
@@ -101,6 +103,44 @@ class Payment extends \GiovanneDev\Asaas\Api\AbstractApi
         $payment = json_decode($payment);
 
         return new PaymentEntity($payment);
+    }
+
+    /**
+     * Get the Payment Slip Details
+     *
+     * @param   array  $id Payment ID
+     * @return  PaymentSlipEntity
+     */
+    public function getPaymentSlipDetails(int $id)
+    {
+        $payment = $this->adapter->get(sprintf('%s/payments/%s', $this->endpoint, $id));
+
+        $payment = json_decode($payment);
+
+        if($payment->billingType == 'BOLETO') {
+            $slipDetails = $this->adapter->get(sprintf('%s/payments/%s/identificationField', $this->endpoint, $id));
+            $slipDetails = json_decode($slipDetails);
+            return new PaymentSlipEntity($slipDetails);
+        }
+    }
+
+    /**
+     * Get Pix QR Code Info
+     *
+     * @param   array  $id Payment ID
+     * @return  PixSlipEntity
+     */
+
+    public function getPixSlipInfo(int $id)
+    {
+        $payment = $this->adapter->get(sprintf('%s/payments/%s', $this->endpoint, $id));
+        $payment = json_decode($payment);
+
+        if($payment->billingType == 'PIX') {
+            $pixDetails = $this->adapter->get(sprintf('%s/payments/%s/pixQrCode', $this->endpoint, $id));
+            $pixDetails = json_decode($pixDetails);
+            return new PixSlipEntity($pixDetails);
+        }
     }
 
     /**
