@@ -32,7 +32,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Softr\\Asaas\\": "src/"
+            "GiovanneDev\\Asaas\\": "src/"
         }
     },
     "minimum-stability": "dev"
