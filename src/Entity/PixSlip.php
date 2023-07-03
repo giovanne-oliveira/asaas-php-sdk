@@ -6,7 +6,7 @@ namespace GiovanneDev\Asaas\Entity;
  *
  * @author Giovanne Oliveira <giovanne@giovanne.dev>
  */
-final class PixIdentitySlip extends \GiovanneDev\Asaas\Entity\AbstractEntity
+final class PixSlip extends \GiovanneDev\Asaas\Entity\AbstractEntity
 {
     public $encodedImage;
     public $payload;

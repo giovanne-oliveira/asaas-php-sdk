@@ -6,7 +6,7 @@ namespace GiovanneDev\Asaas\Entity;
  *
  * @author Giovanne Oliveira <giovanne@giovanne.dev>
  */
-final class PaymentIdentitySlip extends \GiovanneDev\Asaas\Entity\AbstractEntity
+final class PaymentSlip extends \GiovanneDev\Asaas\Entity\AbstractEntity
 {
     public $identificationField;
     public $nossoNumero;
