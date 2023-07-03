@@ -65,6 +65,26 @@ class Customer extends \Softr\Asaas\Api\AbstractApi
         return;
     }
 
+
+    /**
+     * Get Customer By CPF/CNPJ
+     *
+     * @param   string  $document Customer's CPF or CNPJ
+     * @return  CustomerEntity
+     */
+    public function getByDocument($document)
+    {
+        foreach($this->getAll(['cpfCnpj' => $document]) as $customer)
+        {
+            if($customer->cpfCnpj == $document)
+            {
+                return $customer;
+            }
+        }
+
+        return;
+    }
+
     /**
      * Create new customer
      *
