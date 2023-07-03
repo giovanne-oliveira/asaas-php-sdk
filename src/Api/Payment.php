@@ -3,8 +3,8 @@ namespace GiovanneDev\Asaas\Api;
 
 // Entities
 use GiovanneDev\Asaas\Entity\Payment as PaymentEntity;
-use GiovanneDev\Asaas\Entity\PaymentSlipEntity as PaymentSlipEntity;
-use GiovanneDev\Asaas\Entity\PixSlipEntity as PixSlipEntity;
+use GiovanneDev\Asaas\Entity\PaymentSlip as PaymentSlipEntity;
+use GiovanneDev\Asaas\Entity\PixSlip as PixSlipEntity;
 
 /**
  * Payment API Endpoint
