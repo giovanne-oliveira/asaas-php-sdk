@@ -61,6 +61,11 @@ final class Payment extends \GiovanneDev\Asaas\Entity\AbstractEntity
     /**
      * @var string
      */
+    public $originalDueDate;
+
+    /**
+     * @var string
+     */
     public $status;
 
     /**
@@ -86,7 +91,22 @@ final class Payment extends \GiovanneDev\Asaas\Entity\AbstractEntity
     /**
      * @var string
      */
-    public $boletoUrl;
+    public $bankSlipUrl;
+
+    /**
+     * @var string
+     */
+    public $pixTransaction;
+
+    /**
+     * @var string
+     */
+    public $pixQrCodeId;
+
+    /**
+     * @var string
+     */
+    public $transactionReceiptUrl;
 
     /**
      * @var int
@@ -192,6 +212,26 @@ final class Payment extends \GiovanneDev\Asaas\Entity\AbstractEntity
      * @var string
      */
     public $creditCardHolderMobilePhoneDDD;
+
+    /**
+     * @var bool
+     */
+    public $canDelete;
+
+    /**
+     * @var string
+     */
+    public $cannotBeDeletedReason;
+
+    /**
+     * @var bool
+     */
+    public $canEdit;
+
+    /**
+     * @var string
+     */
+    public $cannotEditReason;
 
     /**
      * @param  string  $dueDate
