@@ -1,15 +1,15 @@
 <?php
-namespace Softr\Asaas\Api;
+namespace GiovanneDev\Asaas\Api;
 
 // Entities
-use Softr\Asaas\Entity\Subscription as SubscriptionEntity;
+use GiovanneDev\Asaas\Entity\Subscription as SubscriptionEntity;
 
 /**
  * Subscription API Endpoint
  *
  * @author Agência Softr <agencia.softr@gmail.com>
  */
-class Subscription extends \Softr\Asaas\Api\AbstractApi
+class Subscription extends \GiovanneDev\Asaas\Api\AbstractApi
 {
     /**
      * Get all subscriptions

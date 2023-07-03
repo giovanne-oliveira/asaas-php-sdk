@@ -1,5 +1,5 @@
 <?php
-namespace Softr\Asaas\Adapter;
+namespace GiovanneDev\Asaas\Adapter;
 
 
 // Buzz

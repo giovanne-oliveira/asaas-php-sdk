@@ -1,5 +1,5 @@
 <?php
-namespace Softr\Asaas\Entity;
+namespace GiovanneDev\Asaas\Entity;
 
 /**
  * Abstract Entity

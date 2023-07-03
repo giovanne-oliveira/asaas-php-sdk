@@ -1,12 +1,12 @@
 <?php
-namespace Softr\Asaas\Entity;
+namespace GiovanneDev\Asaas\Entity;
 
 /**
  * Notification Entity
  *
  * @author Agência Softr <agencia.softr@gmail.com>
  */
-final class Notification extends \Softr\Asaas\Entity\AbstractEntity
+final class Notification extends \GiovanneDev\Asaas\Entity\AbstractEntity
 {
     /**
      * @var int

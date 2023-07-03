@@ -1,8 +1,8 @@
 <?php
-namespace Softr\Asaas\Api;
+namespace GiovanneDev\Asaas\Api;
 
-use Softr\Asaas\Adapter\AdapterInterface;
-use Softr\Asaas\Entity\Meta;
+use GiovanneDev\Asaas\Adapter\AdapterInterface;
+use GiovanneDev\Asaas\Entity\Meta;
 
 /**
  * Abstract API

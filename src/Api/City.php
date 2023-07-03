@@ -1,15 +1,15 @@
 <?php
-namespace Softr\Asaas\Api;
+namespace GiovanneDev\Asaas\Api;
 
 // Entities
-use Softr\Asaas\Entity\City as CityEntity;
+use GiovanneDev\Asaas\Entity\City as CityEntity;
 
 /**
  * City API Endpoint
  *
  * @author Agência Softr <agencia.softr@gmail.com>
  */
-class City extends \Softr\Asaas\Api\AbstractApi
+class City extends \GiovanneDev\Asaas\Api\AbstractApi
 {
     /**
      * Get all cities

@@ -1,10 +1,10 @@
 <?php
-namespace Softr\Asaas\Adapter;
+namespace GiovanneDev\Asaas\Adapter;
 
 
 // Asaas
-use Softr\Asaas\Exception\HttpException;
-use Softr\Asaas\Adapter\BuzzAsaasAuthListener;
+use GiovanneDev\Asaas\Exception\HttpException;
+use GiovanneDev\Asaas\Adapter\BuzzAsaasAuthListener;
 
 // Buzz
 use Buzz\Browser;

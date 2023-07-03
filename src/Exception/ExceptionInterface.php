@@ -1,5 +1,5 @@
 <?php
-namespace Softr\Asaas\Exception;
+namespace GiovanneDev\Asaas\Exception;
 
 /**
  * @author Agência Softr <agencia.softr@gmail.com>

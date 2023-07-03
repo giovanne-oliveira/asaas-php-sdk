@@ -3,12 +3,12 @@ namespace Softr\Asaas;
 
 
 // API's
-use Softr\Asaas\Adapter\AdapterInterface;
-use Softr\Asaas\Api\Customer;
-use Softr\Asaas\Api\Subscription;
-use Softr\Asaas\Api\Payment;
-use Softr\Asaas\Api\Notification;
-use Softr\Asaas\Api\City;
+use GiovanneDev\Asaas\Adapter\AdapterInterface;
+use GiovanneDev\Asaas\Api\Customer;
+use GiovanneDev\Asaas\Api\Subscription;
+use GiovanneDev\Asaas\Api\Payment;
+use GiovanneDev\Asaas\Api\Notification;
+use GiovanneDev\Asaas\Api\City;
 
 
 /**

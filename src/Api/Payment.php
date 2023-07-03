@@ -1,15 +1,15 @@
 <?php
-namespace Softr\Asaas\Api;
+namespace GiovanneDev\Asaas\Api;
 
 // Entities
-use Softr\Asaas\Entity\Payment as PaymentEntity;
+use GiovanneDev\Asaas\Entity\Payment as PaymentEntity;
 
 /**
  * Payment API Endpoint
  *
  * @author Agência Softr <agencia.softr@gmail.com>
  */
-class Payment extends \Softr\Asaas\Api\AbstractApi
+class Payment extends \GiovanneDev\Asaas\Api\AbstractApi
 {
     /**
      * Get all payments
