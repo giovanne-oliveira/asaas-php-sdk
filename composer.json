@@ -1,15 +1,20 @@
 {
-    "name"       : "softr/asaas-php-sdk",
+    "name"       : "giovanne-oliveira/asaas-php-sdk",
     "type"       : "library",
     "description": "Asaas.com PHP API Wrapper",
     "keywords"   : ["Asaas", "API", "Payment SaaS", "Credit Card", "Boleto"],
-    "homepage"   : "https://github.com/softr/asaas-php-sdk",
+    "homepage"   : "https://github.com/giovanne-oliveira/asaas-php-sdk",
     "license"    : "MIT",
     "authors": [
         {
             "name"    : "Agência Softr",
             "email"   : "agencia.softr@gmail.com",
             "homepage": "http://www.softr.com.br"
+        },
+        {
+            "name": "Giovanne Oliveira",
+            "email": "giovanne@giovanne.dev",
+            "homepage": "https://giovanne.dev"
         }
     ],
     "require": {
