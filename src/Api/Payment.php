@@ -111,7 +111,7 @@ class Payment extends \GiovanneDev\Asaas\Api\AbstractApi
      * @param   array  $id Payment ID
      * @return  PaymentSlipEntity
      */
-    public function getPaymentSlipDetails(int $id)
+    public function getPaymentSlipDetails($id)
     {
         $payment = $this->adapter->get(sprintf('%s/payments/%s', $this->endpoint, $id));
 
@@ -131,7 +131,7 @@ class Payment extends \GiovanneDev\Asaas\Api\AbstractApi
      * @return  PixSlipEntity
      */
 
-    public function getPixSlipInfo(int $id)
+    public function getPixSlipInfo($id)
     {
         $payment = $this->adapter->get(sprintf('%s/payments/%s', $this->endpoint, $id));
         $payment = json_decode($payment);
