@@ -96,9 +96,9 @@ class Payment extends \GiovanneDev\Asaas\Api\AbstractApi
      * @param   array  $data  Payment Data
      * @return  PaymentEntity
      */
-    public function create(array $data)
+    public function create(array $data, bool $jsonPayload = false)
     {
-        $payment = $this->adapter->post(sprintf('%s/payments', $this->endpoint), $data);
+        $payment = $this->adapter->post(sprintf('%s/payments', $this->endpoint), $data, $jsonPayload);
 
         $payment = json_decode($payment);
 

@@ -116,10 +116,14 @@ class GuzzleHttpAdapter implements AdapterInterface
     /**
      * {@inheritdoc}
      */
-    public function post($url, $content = '')
+    public function post($url, $content = '', $json = false)
     {
         $options = [];
-        $options['form_params'] = $content;
+        if($json) {
+            $options['json'] = $content;
+        }else{
+            $options['form_params'] = $content;
+        }
 
         try
         {
@@ -162,6 +166,6 @@ class GuzzleHttpAdapter implements AdapterInterface
 
         $content = json_decode($body);
 
-        throw new HttpException(isset($content->message) ? $content->message : 'Request not processed.', $code);
+        throw new HttpException($content->errors[0]->description, $code);
     }
 }
