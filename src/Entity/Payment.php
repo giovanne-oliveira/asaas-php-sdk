@@ -119,99 +119,10 @@ final class Payment extends \GiovanneDev\Asaas\Entity\AbstractEntity
     public $installmentValue;
 
     /**
-     * @var string
+     * @var array
      */
-    public $creditCardHolderName;
 
-    /**
-     * @var string
-     */
-    public $creditCardNumber;
-
-    /**
-     * @var string
-     */
-    public $creditCardExpiryMonth;
-
-    /**
-     * @var string
-     */
-    public $creditCardExpiryYear;
-
-    /**
-     * @var string
-     */
-    public $creditCardCcv;
-
-    /**
-     * @var string
-     */
-    public $creditCardHolderFullName;
-
-    /**
-     * @var string
-     */
-    public $creditCardHolderEmail;
-
-    /**
-     * @var string
-     */
-    public $creditCardHolderCpfCnpj;
-
-    /**
-     * @var string
-     */
-    public $creditCardHolderAddress;
-
-    /**
-     * @var string
-     */
-    public $creditCardHolderAddressNumber;
-
-    /**
-     * @var string
-     */
-    public $creditCardHolderAddressComplement;
-
-    /**
-     * @var string
-     */
-    public $creditCardHolderProvince;
-
-    /**
-     * @var string
-     */
-    public $creditCardHolderCity;
-
-    /**
-     * @var string
-     */
-    public $creditCardHolderUf;
-
-    /**
-     * @var string
-     */
-    public $creditCardHolderPostalCode;
-
-    /**
-     * @var string
-     */
-    public $creditCardHolderPhone;
-
-    /**
-     * @var string
-     */
-    public $creditCardHolderPhoneDDD;
-
-    /**
-     * @var string
-     */
-    public $creditCardHolderMobilePhone;
-
-    /**
-     * @var string
-     */
-    public $creditCardHolderMobilePhoneDDD;
+     public $creditCard;
 
     /**
      * @var bool
